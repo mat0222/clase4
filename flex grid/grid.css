@@ -1,0 +1,37 @@
+*{
+    font-weight: 400;
+}
+.padre{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    grid-template-rows: repeat(2,250px);
+    gap: 10px;
+    grid-template-areas: "elemento2 elemento3 pepe elemento4";
+}
+.hijos{
+    background-color: red;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+}
+.elemento1{
+    background-color: yellow;
+    grid-column: 1/4;
+    grid-area: pepe;
+}
+.elemento2{
+    grid-area: elemento2;
+}
+.elemento3{
+    grid-area: elemento3;
+}
+.elemento4{
+    grid-area: elemento4;
+}
+.alinear{
+    display: flex;
+    align-items: center; 
+    
+}
